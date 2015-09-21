@@ -1,0 +1,28 @@
+apply plugin: 'android'
+
+dependencies {
+    // rootProject.ext.* variables are defined in project gradle file, you can also use path here.
+    compile rootProject.ext.facebookSDK
+    compile project(':ParseLoginUI')
+    compile rootProject.ext.androidSupport
+    compile files(rootProject.ext.parsePath)
+    compile files(rootProject.ext.parseFacebookUtilsPath)
+}
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            res.srcDirs = ['res']
+        }
+    }
+}

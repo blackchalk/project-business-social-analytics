@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@drawable/com_leadco_ui_leadco_login_button_background">
+
+    <TextView
+        android:id="@+id/login_help_instructions"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        style="@style/ParseLoginUI.TextView"
+        android:gravity="center"
+        android:text="@string/com_parse_ui_login_help_instructions"
+        android:textColor="@android:color/holo_blue_light"
+        tools:targetApi="ice_cream_sandwich"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/login_help_email_input"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/com_parse_ui_xlarge_vertical_spacing"
+        android:hint="@string/com_parse_ui_login_help_email_input_hint"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/com_leadco_field_background"
+        android:textColor="#ff000000"
+        android:textSize="25dp"></EditText>
+
+    <Button
+        android:id="@+id/login_help_submit"
+        style="@style/ParseLoginUI.Button"
+        android:layout_marginTop="@dimen/com_parse_ui_xlarge_vertical_spacing"
+        android:background="@drawable/com_leadco_button_finish"
+        android:layout_width="235dp"
+        android:layout_weight="0.08" />
+</LinearLayout>

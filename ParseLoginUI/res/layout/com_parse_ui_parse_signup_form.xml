@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/com_leadco_ui_leadco_login_button_background"
+    android:weightSum="1"
+    android:foreground="@drawable/com_leadco_button_register_username">
+
+    <EditText
+        android:id="@+id/signup_username_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ParseLoginUI.EditText"
+        android:hint="@string/com_parse_ui_username_input_hint"
+        android:textColor="#ff000000" />
+
+    <EditText
+        android:id="@+id/signup_password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ParseLoginUI.EditText"
+        android:layout_marginTop="@dimen/com_parse_ui_small_vertical_spacing"
+        android:fontFamily="sans-serif"
+        android:hint="@string/com_parse_ui_password_input_hint"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        android:textColor="#ff000000" />
+
+    <EditText
+        android:id="@+id/signup_confirm_password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ParseLoginUI.EditText"
+        android:layout_marginTop="@dimen/com_parse_ui_small_vertical_spacing"
+        android:fontFamily="sans-serif"
+        android:hint="@string/com_parse_ui_confirm_password_input_hint"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        android:textColor="#ff000000" />
+
+    <EditText
+        android:id="@+id/signup_email_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ParseLoginUI.EditText"
+        android:layout_marginTop="@dimen/com_parse_ui_small_vertical_spacing"
+        android:hint="@string/com_parse_ui_email_input_hint"
+        android:inputType="textEmailAddress"
+        android:textColor="#ff000000" />
+
+    <EditText
+        android:id="@+id/signup_name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ParseLoginUI.EditText"
+        android:layout_marginTop="@dimen/com_parse_ui_small_vertical_spacing"
+        android:hint="@string/com_parse_ui_name_input_hint"
+        android:inputType="textPersonName"
+        android:textColor="#ff000000" />
+
+    <Button
+        android:id="@+id/create_account"
+        style="@style/ParseLoginUI.Button"
+        android:layout_marginTop="@dimen/com_parse_ui_small_vertical_spacing"
+        android:background="@drawable/next_button"
+        android:layout_width="194dp"
+        android:layout_weight="0.19"
+        android:layout_gravity="right" />
+
+</LinearLayout>

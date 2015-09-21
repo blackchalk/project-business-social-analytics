@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/com_parse_ui_vertical_margin"
+    android:paddingLeft="@dimen/com_parse_ui_horizontal_margin"
+    android:paddingRight="@dimen/com_parse_ui_horizontal_margin"
+    android:paddingBottom="@dimen/com_parse_ui_vertical_margin"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/com_leadco_ui_leadco_login_button_background">
+
+    <include
+        layout="@layout/com_leadco_ui_leadco_login_app_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="151dp"
+        android:layout_weight="0.02" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/profile_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ParseLoginUI.TextView"
+            android:text="@string/profile_title_logged_in"
+            android:background="@drawable/com_leadco_field_background"
+            android:textColor="#ff06b243" />
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ParseLoginUI.TextView"
+            android:textColor="#ff2024ff" />
+
+        <TextView
+            android:id="@+id/profile_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ParseLoginUI.TextView" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:id="@+id/buttonId_go"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/logout_button"
+            style="@style/ParseLoginUI.Button"
+            android:layout_marginTop="@dimen/com_parse_ui_large_vertical_spacing"
+            android:text="@string/profile_logout_button_label"
+            android:background="@drawable/com_leadco_field_background"
+            android:textColor="@color/com_facebook_blue"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

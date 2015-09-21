@@ -1,0 +1,138 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/sample_main_layout">
+
+    <ViewAnimator
+        android:id="@+id/sample_output"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+        <!--style="@style/Widget.SampleMessageTile"-->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--<TextView-->
+            <!--style="@style/Widget.SampleMessage"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="@dimen/horizontal_page_margin"-->
+            <!--android:paddingRight="@dimen/horizontal_page_margin"-->
+            <!--android:paddingTop="@dimen/vertical_page_margin"-->
+            <!--android:paddingBottom="@dimen/vertical_page_margin"-->
+            <!--android:text="@string/intro_message" />-->
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="5"
+                android:rowCount="5">
+
+                <TextView
+                    android:layout_width="114dp"
+                    android:layout_height="wrap_content"
+                    android:text="SEARCH"
+                    android:id="@+id/textView2"
+                    android:layout_row="1"
+                    android:layout_column="2" />
+
+                <TextView
+                    android:layout_width="114dp"
+                    android:layout_height="wrap_content"
+                    android:text="OPT"
+                    android:id="@+id/textView3"
+                    android:layout_row="1"
+                    android:layout_column="3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile Name"
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/tvid_username"
+                    android:textSize="24sp"
+                    android:layout_row="3"
+                    android:layout_column="1" />
+
+                <TextView
+                    android:layout_width="114dp"
+                    android:layout_height="wrap_content"
+                    android:text="HOME"
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/textView"
+                    android:layout_row="1"
+                    android:layout_column="1" />
+
+                <ImageButton
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:id="@+id/imageButton"
+                    android:layout_marginLeft="8dp"
+                    android:layout_row="4"
+                    android:layout_column="1"
+                    android:src="@drawable/com_facebook_profile_picture_blank_square" />
+
+                <ImageButton
+                    android:layout_width="92dp"
+                    android:layout_height="92dp"
+                    android:id="@+id/imageButton2"
+                    android:layout_row="4"
+                    android:layout_column="3"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="4dp"
+                    android:src="@drawable/messenger_button_send_round_shadow"
+                    android:background="@color/com_parse_ui_parse_login_text_hint" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_row="4"
+                    android:layout_column="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="birthdate:"
+                        android:id="@+id/textView6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="zodiac:"
+                        android:id="@+id/textView5" />
+
+                </LinearLayout>
+
+            </GridLayout>
+        </ScrollView>
+
+
+        <fragment
+            android:name="common.logger.LogFragment"
+            android:id="@+id/log_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </ViewAnimator>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" >
+
+    </View>
+
+    <FrameLayout
+        android:id="@+id/sample_content_fragment"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0px" >
+
+    </FrameLayout>
+
+</LinearLayout>
